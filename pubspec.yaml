@@ -27,8 +27,8 @@ dependencies:
   # flutter_modular with patched custom transition router
   flutter_modular:
 #    path: ../modular
-    git:
-      url: https://github.com/stakah/modular
+#    git:
+#      url: https://github.com/stakah/modular
 
 dev_dependencies:
   flutter_test:

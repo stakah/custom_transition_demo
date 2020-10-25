@@ -4,9 +4,9 @@ import 'package:flutter_modular/flutter_modular.dart';
 CustomTransition get rotationWithSlideTransition => CustomTransition(
     transitionDuration: Duration(milliseconds: 500),
     transitionBuilder: (context, animation, secondaryAnimation, child){
-      return new RotationTransition(turns: animation,
+      return RotationTransition(turns: animation,
         child: SlideTransition(
-          position: new Tween<Offset>(
+          position: Tween<Offset>(
             begin: const Offset(-1.0, 0.0),
             end: Offset.zero,
           ).animate(animation),
@@ -34,8 +34,8 @@ CustomTransition get rotationWithSlideTransition => CustomTransition(
 CustomTransition get scaleBounceTransition => CustomTransition(
     transitionDuration: Duration(milliseconds: 500),
     transitionBuilder: (context, animation, secondaryAnimation, child){
-      return new ScaleTransition(
-        scale: new Tween<double>(
+      return ScaleTransition(
+        scale: Tween<double>(
           begin: 0.0,
           end: 1.0,
         ).animate(
